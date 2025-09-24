@@ -6,7 +6,7 @@ The tool is particularly useful for **monitoring batch jobs, scheduled tasks, or
 
 ---
 
-## 📌 Features
+##  Features
 
 - **CSV Parsing**
   - Reads structured job event logs in CSV format.
@@ -17,8 +17,8 @@ The tool is particularly useful for **monitoring batch jobs, scheduled tasks, or
   - Reports ongoing jobs with no `END` entry.
 
 - **Threshold Monitoring**
-  - ⚠️ **Warning**: Jobs exceeding **5 minutes**.
-  - ❌ **Error**: Jobs exceeding **10 minutes**.
+  - **Warning**: Jobs exceeding **5 minutes**.
+  - **Error**: Jobs exceeding **10 minutes**.
 
 - **Anomaly Detection**
   - Logs cases where `END` events appear without a matching `START`.
@@ -30,7 +30,7 @@ The tool is particularly useful for **monitoring batch jobs, scheduled tasks, or
 
 ---
 
-## 📂 Log File Format
+##  Log File Format
 
 The log file must be in **CSV format** with 4 fields per row:
 
@@ -43,7 +43,7 @@ timestamp, description, status, pid
 - **status** → Either `START` or `END`.  
 - **pid** → Process/job ID (must match across start and end events).  
 
-### ✅ Example Log File (`logs.log.csv`)
+###  Example Log File (`logs.log.csv`)
 
 ```csv
 12:00:00, Job A, START, 101
@@ -55,7 +55,7 @@ timestamp, description, status, pid
 
 ---
 
-## ▶️ How to Use
+##  How to Use
 
 1. Clone or download this repository.  
    ```bash
@@ -77,7 +77,7 @@ timestamp, description, status, pid
 ---
 
 
-## 📦 Requirements
+##  Requirements
 
 - Python 3.x  
 - No third-party dependencies (uses only Python Standard Library).  
@@ -86,7 +86,7 @@ timestamp, description, status, pid
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 You can configure job duration thresholds directly in the script:
 
@@ -102,7 +102,7 @@ ERROR_THRESHOLD = timedelta(minutes=10)
 
 
 
-## 📊 Example Output
+##  Example Output
 
 ### Console Report
 ```
