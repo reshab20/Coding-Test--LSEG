@@ -59,7 +59,7 @@ timestamp, description, status, pid
 
 1. Clone or download this repository.  
    ```bash
-   git clone https://github.com/yourusername/job-log-analyzer.git
+   git clone https://github.com/reshab20/Coding-Test--LSEG.git
    cd LSEG-TEST
    ```
 
